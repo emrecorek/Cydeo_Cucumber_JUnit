@@ -1,6 +1,7 @@
 package com.cydeo.runners;
 
 
+import com.cydeo.step_definitions.Hooks;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
@@ -14,7 +15,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/cydeo/step_definitions",
         dryRun = false,
-        tags = ""
+        tags = "@Regression"
 
 
 )
