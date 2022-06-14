@@ -9,6 +9,7 @@ import org.openqa.selenium.TakesScreenshot;
 
 public class Hooks {
 
+    /*
     //import from io.cucumber.java not from junit
     //@Before (order = 1)
     public void setupScenario() {
@@ -25,6 +26,8 @@ public class Hooks {
         System.out.println("====this will only apply to scenarios with @db tag");
     }
 
+     */
+
     @After
     public void tearDownScenario(Scenario scenario) {
 
@@ -33,9 +36,10 @@ public class Hooks {
 
             scenario.attach(screenShot, "image/png", scenario.getName());
         }
-        Driver.closeDriver();
+       // Driver.closeDriver();
     }
 
+    /*
 
     @BeforeStep("@Student")
     public void setupStep() {
@@ -46,6 +50,7 @@ public class Hooks {
     public void afterStep() {
         System.out.println("------------------applying after step");
     }
+     */
 
 
 }
