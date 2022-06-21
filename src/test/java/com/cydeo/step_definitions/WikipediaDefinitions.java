@@ -38,4 +38,5 @@ public class WikipediaDefinitions {
         Assert.assertEquals(str,wikipediaPage.mainHeader.getText());
     }
 
+
 }
